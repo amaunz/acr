@@ -4,7 +4,7 @@
 	<groupId>com.acr</groupId>
 	<artifactId>ACR</artifactId>
 	<packaging>war</packaging>
-	<version>0.0.1</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<name>ACR</name>
 	<url>http://maven.apache.org</url>
 	<repositories>
@@ -66,6 +66,11 @@
 				<configuration>
 					<scanIntervalSeconds>2</scanIntervalSeconds>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.1</version>
 			</plugin>
 		</plugins>
 	</build>
