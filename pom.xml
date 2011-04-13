@@ -2,10 +2,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.acr</groupId>
-	<artifactId>RESTletTest</artifactId>
+	<artifactId>ACR</artifactId>
 	<packaging>war</packaging>
-	<version>1.0-SNAPSHOT</version>
-	<name>RESTletTest</name>
+	<version>0.0.1</version>
+	<name>ACR</name>
 	<url>http://maven.apache.org</url>
 	<repositories>
 		<repository>

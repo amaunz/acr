@@ -37,7 +37,7 @@ public class HelloApplication extends Application {
 				stringBuilder.append("<tr>");
 				stringBuilder.append("<td>");
 				stringBuilder.append("<h3>available REST calls</h3>");
-				stringBuilder.append("<ol><li><a href=\"app/hello\">hello</a> --> returns hello world message " +
+				stringBuilder.append("<ol><li><a href=\"acr/hello\">hello</a> --> returns hello world message " +
 				"and date string</li>");
 
 				stringBuilder.append("</ol>");
