@@ -12,12 +12,12 @@ import org.restlet.representation.Variant;
 import org.restlet.resource.ResourceException;
 import org.restlet.resource.ServerResource;
  
-public class HelloResource extends ServerResource {
+public class AcrResource extends ServerResource {
  
-    public HelloResource() {
+    public AcrResource() {
         super();
     }
-    public HelloResource(Context context,
+    public AcrResource(Context context,
                           Request request,
                           Response response) {
         getVariants().add(new Variant(MediaType.TEXT_PLAIN));

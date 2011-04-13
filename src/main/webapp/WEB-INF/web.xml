@@ -10,7 +10,7 @@
                  <servlet-class>org.restlet.ext.servlet.ServerServlet</servlet-class>
                  <init-param>
                          <param-name>org.restlet.application</param-name>
-                         <param-value>com.acr.HelloApplication</param-value>
+                         <param-value>com.acr.AcrApplication</param-value>
                  </init-param>
          </servlet>
  

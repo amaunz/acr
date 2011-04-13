@@ -9,20 +9,20 @@ import org.restlet.data.MediaType;
 import org.restlet.representation.StringRepresentation;
 import org.restlet.routing.Router;
 
-public class HelloApplication extends Application {
+public class AcrApplication extends Application {
 
-	public HelloApplication() {
+	public AcrApplication() {
 		super();
 	}
 
-	public HelloApplication(Context parentContext) {
+	public AcrApplication(Context parentContext) {
 		super(parentContext);
 	}
 
 	public Restlet createRoot() {
 		Router router = new Router(getContext());
 
-		router.attach("/hello", HelloResource.class);
+		router.attach("/hello", AcrResource.class);
 
 		Restlet mainpage = new Restlet() {
 			@Override
