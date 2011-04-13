@@ -89,4 +89,11 @@
 		<url>http://github.com/amaunz/acr</url>
 	</scm>
 
+	<distributionManagement>
+		<repository>
+			<id>gh-pages</id>
+			<url>file:///${basedir}/../ACR-pages/repository/</url>
+		</repository>
+	</distributionManagement>
+
 </project>
