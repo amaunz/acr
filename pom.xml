@@ -69,4 +69,12 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<scm>
+		<connection>scm:git:git://github.com/amaunz/acr.git</connection>
+		<developerConnection>scm:git:git@github.com:amaunz/acr.git</developerConnection>
+		<tag>HEAD</tag>
+		<url>http://github.com/amaunz/acr</url>
+	</scm>
+
 </project>
