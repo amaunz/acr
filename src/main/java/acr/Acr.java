@@ -13,8 +13,7 @@ public class Acr {
 	    component.getServers().add(Protocol.HTTP, 8081);  
 	  
 	    // Attach the sample application.  
-	    component.getDefaultHost().attach("/acr",  
-	            new AcrApplication());  
+	    component.getDefaultHost().attachDefault(new AcrApplication());  
 	  
 	    // Start the component.  
 	    component.start();  
