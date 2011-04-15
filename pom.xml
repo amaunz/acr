@@ -87,7 +87,7 @@
 	<distributionManagement>
 		<repository>
 			<id>gh-pages</id>
-      <url>file:///${basedir}/../../ACR-pages/repository/</url>
+      <url>file:///${basedir}/../../../ACR-pages/repository/</url>
 		</repository>
 	</distributionManagement>
 
