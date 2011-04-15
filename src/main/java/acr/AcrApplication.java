@@ -16,8 +16,7 @@ public class AcrApplication extends Application {
         Router router = new Router(getContext());  
   
         // Defines only one route  
-        router.attach("/hello", AcrResource.class);  
-  
+        router.attach("", AcrResource.class);  
         return router;  
 	}
 
