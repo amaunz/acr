@@ -3,7 +3,7 @@
 	<groupId>acr</groupId>
 	<artifactId>ACR</artifactId>
 	<packaging>war</packaging>
-	<version>0.0.3-SNAPSHOT</version>
+	<version>0.0.5-SNAPSHOT</version>
 	<name>ACR</name>
 	<url>http://maven.apache.org</url>
 	<repositories>
@@ -87,7 +87,7 @@
 	<distributionManagement>
 		<repository>
 			<id>gh-pages</id>
-      <url>file:///${basedir}/../../ACR-pages/repository/</url>
+      <url>file:///${basedir}/../../../ACR-pages/repository/</url>
 		</repository>
 	</distributionManagement>
 
