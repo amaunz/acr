@@ -10,13 +10,11 @@ public class AcrApplication extends Application {
      * Creates a root Restlet that will receive all incoming calls. 
      */  
     @Override  
-    public synchronized Restlet createInboundRoot() {  
-        // Create a router Restlet that routes each call to a  
-        // new instance of HelloWorldResource.  
-        Router router = new Router(getContext());  
-  
-        // Defines only one route  
-        router.attach("", AcrResource.class);  
+    public synchronized Restlet createInboundRoot() {    	
+        Router router = new Router( getContext() );  
+        router.attach("/acr", AcrResource.class);
+        getTunnelService().setEnabled(true);
+        getTunnelService().setExtensionsTunnel(true);
         return router;  
 	}
 
