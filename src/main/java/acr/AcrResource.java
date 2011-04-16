@@ -4,6 +4,8 @@ import org.restlet.data.MediaType;
 import org.restlet.representation.*;
 import org.restlet.resource.*;
 
+import acr.hello.Hello;
+
 public class AcrResource extends ServerResource {
 
 	@Override
@@ -20,9 +22,8 @@ public class AcrResource extends ServerResource {
 	
 	@Get("html")
 	public Representation toHTML() {
-		System.out.println( "h:" );
-		String str = "Hello <html> world!\n";
-		str = acr.util.Html.getHtml("ACR::acr", str);
+		String str = Hello.Greet();
+		str = acr.util.Html.getHtml(this.getClass().getSimpleName(), str);
 		return new StringRepresentation(str, MediaType.TEXT_HTML);
 	}
 
@@ -32,8 +33,7 @@ public class AcrResource extends ServerResource {
 	 */
 	@Get("txt")  
 	public Representation toTXT() {
-		System.out.println( "t:" );
-		String str="Hello plain world!\n";
+		String str = Hello.Greet();
 		return new StringRepresentation(str, MediaType.TEXT_PLAIN);  
 	}
 
