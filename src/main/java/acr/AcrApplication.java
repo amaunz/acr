@@ -23,7 +23,7 @@ public class AcrApplication extends Application {
 		Restlet mainPage = new Restlet() {
 			@Override
 			public void handle(Request request, Response response) {
-				response.setEntity(Html.getHtml("Main contents", "<a href=\"/acr\">Hello World Application</a>", false), MediaType.TEXT_HTML);
+				response.setEntity(Html.getHtml("Main contents", "<a href=\"acr\">Hello World Application</a>", false), MediaType.TEXT_HTML);
 			}
 		};
 		router.attach("/", mainPage);
