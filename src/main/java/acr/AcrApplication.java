@@ -17,7 +17,7 @@ public class AcrApplication extends Application {
 	@Override  
 	public synchronized Restlet createInboundRoot() {    	
 		Router router = new Router( getContext() );  
-		router.attach("/acr", AcrResource.class);
+		router.attach("acr", AcrResource.class);
 
 
 		Restlet mainPage = new Restlet() {
