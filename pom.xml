@@ -3,7 +3,7 @@
 	<groupId>acr</groupId>
 	<artifactId>ACR</artifactId>
 	<packaging>war</packaging>
-	<version>0.0.6-SNAPSHOT</version>
+	<version>0.0.7-SNAPSHOT</version>
 	<name>ACR</name>
 	<url>http://maven.apache.org</url>
 	<repositories>
